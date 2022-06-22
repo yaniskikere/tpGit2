@@ -8,7 +8,7 @@ function ajouterTacheAfaire() {
     let html='';
     tab_taches_afaire.forEach(element => {
         html+='<tr><td>'+element+'</td>';
-        html+='<td><input type="date" class="form-control" id="tacheAfaireModif"><button type="button" onclick="modifierTacheAfaire('+element+')">Modifier</button><button type="button" onclick="supprimerTacheAfaire('+element+')">Supprimer</button></td></tr>';
+        html+='<td><input type="text" class="form-control" id="tacheAfaireModif"><button type="button" onclick="modifierTacheAfaire('+element+')">Modifier</button><button type="button" onclick="supprimerTacheAfaire('+element+')">Supprimer</button></td></tr>';
     });
     let body_table_taches=document.getElementById('liste_taches_Afaire');
     body_table_taches.innerHTML=html;
@@ -32,7 +32,7 @@ function ajouterTacheFinie() {
     let html='';
     tab_taches_fini.forEach(element => {
         html+='<tr><td>'+element+'</td>';
-        html+='<td><input type="date" class="form-control" id="tacheFiniModif"><button type="button" onclick="modifierTacheAfaire('+element+')">Modifier</button><button type="button" onclick="supprimerTacheAfaire('+element+')">Supprimer</button></td></tr>';
+        html+='<td><input type="text" class="form-control" id="tacheFiniModif"><button type="button" onclick="modifierTacheAfaire('+element+')">Modifier</button><button type="button" onclick="supprimerTacheAfaire('+element+')">Supprimer</button></td></tr>';
     });
     let body_table_taches=document.getElementById('liste_taches_finies');
     body_table_taches.innerHTML=html;
