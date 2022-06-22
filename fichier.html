@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <title> To Do List</title>
     <link rel="stylesheet" href="fichier.css">
 </head>
 <body>
-    <div id="maDiv" class="header">
-        <h2>To Do List</h2>
-        <input type="text" id="myInput" placeholder="Nom de la tâche ...">
-        <input type="button" onclick="ajouter()" class="addBtn" value="Ajouter"></input>
+    <div class="container">
+        <div id="newtask">
+            <h2>To Do List</h2>
+            <br><br>
+            <input type="text" placeholder="Nom de la tâche..">
+            <button onclick="ajouter()">Ajouter</button>
+        </div>
+
+        <div id="tasks">
+            <h4>A faire</h4>
+            <br><br>
+            <h4>Fini</h4>
+            <br><br>
+        </div>
     </div>
-  
-    <ul id="myUL">
-        <h4>À faire</h4>
-    
-        <input type="button" onclick="modifier()" class="addBtn" value="Modifier"></input>
-        <input type="button" onclick="supprimer()" class="addBtn" value="Supprimer"></input>
-    </ul> 
 
-    <ul id="myUL">
-        <h4>Fini</h4>
-
-        <input type="button" onclick="modifier()" class="addBtn" value="Modifier"></input>
-        <input type="button" onclick="supprimer()" class="addBtn" value="Supprimer"></input>
-    </ul> 
 </body>
+</html>
