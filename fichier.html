@@ -3,20 +3,39 @@
 <head>
     <title> To Do List</title>
     <link rel="stylesheet" href="fichier.css">
+    <script src="fichier.js"></script>
 </head>
 <body>
     <div class="container">
-        <div id="newtask">
-            <h2>To Do List</h2>
-            <br><br>
-            <input type="text" placeholder="Nom de la tâche..">
-            <button onclick="ajouter()">Ajouter</button>
-        </div>
 
         <div id="tasks">
             <h4>A faire</h4>
+            <div id="newtask">
+                <h2>To Do List</h2>
+                <br><br>
+                <input type="text" placeholder="Nom de la tache.." id="tacheAfaire">
+                <button onclick="ajouterTacheAfaire()">Ajouter</button>
+                <br><br>
+                <table>
+                    <tbody id="liste_taches_Afaire">
+                  
+                    </tbody>
+                </table>
+            </div>
             <br><br>
             <h4>Fini</h4>
+            <div id="newtask">
+                <h2>To Do List</h2>
+                <br><br>
+                <input type="text" placeholder="Nom de la tache.." id="tacheFinie">
+                <button onclick="ajouterTacheFinie()">Ajouter</button>
+                <br><br>
+                <table>
+                    <tbody id="liste_taches_finies">
+                  
+                    </tbody>
+                </table>
+            </div>
             <br><br>
         </div>
     </div>
